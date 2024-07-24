@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Vertical (basic) form</h2>
+  <form action="/action_page.php" method = "POST">
+    <div class="form-group">
+        <div class="form-group">
+            <label for="email">Name</label>:
+            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+          </div>
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="form-group">
+        <label >file:</label>
+        <input id="file"  type="file"   name="file"/>
+      </div>
+    
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+<script>
+    let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{2,26}$/; 
+  
+let pass1 = "Ra@1"; 
+let pass2 = "GeeksforGeeks"; 
+let pass3 = "Abcdefghijklmnopque@123"; 
+  
+console.log(pass1, regex.test(pass1)); 
+console.log(pass2, regex.test(pass2)); 
+console.log(pass3, regex.test(pass3));
+</script>
+</body>
+</html>
+
+
+
